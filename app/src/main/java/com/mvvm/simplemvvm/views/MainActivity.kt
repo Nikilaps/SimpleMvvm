@@ -22,7 +22,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val activityMainBinding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        val activityMainBinding: ActivityMainBinding = DataBindingUtil.setContentView(
+            this, R.layout.activity_main
+        )
         activityMainBinding.viewModel = LoginViewModel()
         activityMainBinding.executePendingBindings()
     }
