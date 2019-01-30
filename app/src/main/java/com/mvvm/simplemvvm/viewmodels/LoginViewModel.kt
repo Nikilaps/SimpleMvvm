@@ -47,7 +47,7 @@ class LoginViewModel(private val user: User = User("", "")) : BaseObservable() {
     }
 
     companion object {
-        private const val mSuccessMsg: String = "Login was successful"
+        private const val mSuccessMsg: String = "Login  successful"
         private const val mErrorMsg: String = "Email or Password not valid"
     }
 }
